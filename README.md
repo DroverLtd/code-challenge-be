@@ -1,4 +1,4 @@
-# A few words about Drover
+# About Drover
 
 Drover is a VC-backed, growth-stage marketplace company offering monthly, all-in car subscriptions to customers who want to experience car ownership as it should be: digital, flexible and at a fair, transparent price. For some more detail, check out our press coverage in TechCrunch, Forbes or CityAM.
 
@@ -16,14 +16,14 @@ A car's make is the brand of the vehicle, while the model refers to the name of 
 
 For this challenge only consider the following Makes and Models:
 * BMW
-** Series3
-** X1
+  * Series3
+  * X1
 * Toyota
-** Yaris
-** RAV4
+  * Yaris
+  * RAV4
 * Renault
-** Clio
-** Megane
+  * Clio
+  * Megane
 
 ## What do we expect from you?
 
@@ -106,6 +106,7 @@ Response:
 
 5) Add on the GET cars endpoint the possibility to filter by make and/or color. On the example showed on point 3 if we wanted to get all cars from toyota and red the response should be:
 
+```json
 {
    cars: [
       {
@@ -121,6 +122,7 @@ Response:
       }
    ]
 }
+```
 
 ## Bonus Points
 
