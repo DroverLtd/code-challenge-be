@@ -39,7 +39,7 @@ The challenge must have the following 5 requirements implemented:
 {
    "make": "toyota",
    "model": "yaris",
-   "year": "2015",
+   "year": 2015,
    "color": "red",
    "price": {
        "amount": 50000,
@@ -56,7 +56,7 @@ The challenge must have the following 5 requirements implemented:
 {
    "make": "toyota",
    "model": "yaris",
-   "year": "2015",
+   "year": 2015,
    "color": "red",
    "price": {
        "amount": 50000,
@@ -76,7 +76,7 @@ The challenge must have the following 5 requirements implemented:
          "id": 1,
          "make": "toyota",
          "model": "yaris",
-         "year": "2015",
+         "year": 2015,
          "color": "red",
          "price": {
              "amount": 40000,
@@ -87,7 +87,7 @@ The challenge must have the following 5 requirements implemented:
          "id": 2,
          "make": "bmw",
          "model": "x1",
-         "year": "2017",
+         "year": 2017,
          "color": "black",
          "price": {
              "amount": 60000,
