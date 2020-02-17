@@ -33,7 +33,7 @@ The challenge must have the following 5 requirements implemented:
 
 1) Create a REST endpoint to create a car in one POST request
 
-`PUT /cars/{id}`
+`POST /cars`
 
 ```json
 {
