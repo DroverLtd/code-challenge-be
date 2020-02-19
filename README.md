@@ -12,7 +12,8 @@ A car's make is the brand of the vehicle, while the model refers to the name of 
 * Model
 * Year
 * Color
-* Monthly price
+* Monthly, subscription price
+* Available from, when the car is available for booking
 
 For this challenge only consider the following Makes and Models:
 * BMW
@@ -44,7 +45,8 @@ The challenge must have the following 5 requirements implemented:
    "price": {
        "amount": 50000,
        "currency_code": "EUR"
-   }
+   },
+   "available_from": "2020-01-15"
 }
 ```
 
@@ -61,11 +63,12 @@ The challenge must have the following 5 requirements implemented:
    "price": {
        "amount": 50000,
        "currency_code": "EUR"
-   }
+   },
+   "available_from": "2020-01-15"
 }
 ```
 
-3) Create an endpoint to fetch all cars. The results *should be sorted* by price from low to high.
+3) Create an endpoint to fetch all cars. The results *should be sorted* by price from lowest to highest by default and all cars with an available from bigger than three months in the future should be filtered.
 
 `GET /cars`
 
@@ -81,7 +84,8 @@ The challenge must have the following 5 requirements implemented:
          "price": {
              "amount": 40000,
              "currency_code": "EUR"
-         }
+         },
+         "available_from": "2020-01-15"
       },
       {
          "id": 2,
@@ -92,13 +96,14 @@ The challenge must have the following 5 requirements implemented:
          "price": {
              "amount": 60000,
              "currency_code": "EUR"
-         }
+         },
+         "available_from": "2020-01-30"
       }
    ]
 }
 ```
 
-5) Add on the GET cars endpoint the possibility to filter by make and/or color. On the example showed on point 3 if we wanted to get all cars from toyota and red the response should be:
+5) Add on the GET cars endpoint the possibility to filter by make and/or color. On the example showed on point 3, if we wanted to get all cars from toyota and with red color, the response should be:
 
 ```json
 {
@@ -112,7 +117,8 @@ The challenge must have the following 5 requirements implemented:
          "price": {
              "amount": 40000,
              "currency_code": "EUR"
-         }
+         },
+         "available_from": "2020-01-15"
       }
    ]
 }
@@ -122,9 +128,9 @@ The challenge must have the following 5 requirements implemented:
 
 6) On the GET cars API add the possibility to do pagination, showing 20 cars at a time
 
+7) On the GET cars API add the possibility to do a sort by price, year, make or availability
+
+8) Add documentation to all endpoints
+
 ------
-
-## Questions?
-
-If you have any problems or questions please reach out to us at techleads@joindrover.com
 
