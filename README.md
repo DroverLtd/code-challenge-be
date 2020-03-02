@@ -36,12 +36,12 @@ Code is your 1st class citizen.
 * Good design decisions.
 * Testable code.
 
-The challenge must have the following 5 endpoints implemented:
+The challenge must have the following 4 endpoints implemented:
 
 1. Create a REST endpoint to create a `car` in one POST request
 1. Create an endpoint to update a `car`.
 1. Create an endpoint to fetch all `cars`. The results *should be sorted* by price from lowest to highest by default and all cars with an available from bigger than three months in the future should be filtered.
-1. Add on the GET cars endpoint the possibility to filter by maker and/or color. On the example showed on point 3, if we wanted to get all cars from toyota and with red color, the response should be:
+1. Add on the GET cars endpoint the possibility to filter by maker and/or color.
 
 ## Bonus Points
 
